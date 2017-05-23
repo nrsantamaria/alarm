@@ -15,10 +15,8 @@ $(document).ready(function(){
     e.preventDefault();
     var name = $('#name').val();
     var time = $('#time').val();
-    console.log('time:', time);
     var newAlarm = new Alarm(name, time)
     Alarms.currentAlarms.push(newAlarm);
-    console.log(Alarms);
   });
 
 
